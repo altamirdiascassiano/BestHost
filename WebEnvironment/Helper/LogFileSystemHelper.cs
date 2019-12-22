@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.IO;
 
 namespace WebEnvironment.Helper
@@ -29,9 +28,9 @@ namespace WebEnvironment.Helper
                     sw.WriteLine(string.Concat("StackTrace: ", ex.StackTrace));
                     sw.WriteLine(string.Concat("InnerException: ", ex.InnerException));
                 }
-            }catch(Exception)
+            }catch(Exception exIntern)
             {
-
+                LogEmailHelper.LogMail(exIntern);
             }
         }
     }

@@ -19,6 +19,7 @@ namespace WebEnvironment.Controllers
             }
             catch (Exception ex)
             {
+                LogEmailHelper.LogMail(ex);
                 LogFileSystemHelper.LogFile("Não foi possível realizar a buscar dos dados!", ex);
                 return BadRequest();
             }
@@ -33,6 +34,7 @@ namespace WebEnvironment.Controllers
             }
             catch (Exception ex)
             {
+                LogEmailHelper.LogMail(ex);
                 LogFileSystemHelper.LogFile("Não foi possível realizar a inserção dos dados!", ex);
                 return BadRequest();
             }
@@ -49,6 +51,7 @@ namespace WebEnvironment.Controllers
             }
             catch (Exception ex)
             {
+                LogEmailHelper.LogMail(ex);
                 LogFileSystemHelper.LogFile(string.Concat("Não foi possível realizar a deleção do HostAdmin", " - ", hostAdmin.Name, "!"), ex);
                 return BadRequest();
             }
@@ -65,9 +68,11 @@ namespace WebEnvironment.Controllers
             }
             catch (Exception ex)
             {
+                LogEmailHelper.LogMail(ex);
                 LogFileSystemHelper.LogFile(string.Concat("Não foi possível realizar a atualização do HostAdmin", " - ", hostAdmin.Name, "!"), ex);
                 return BadRequest();
             }
         }
+
     }
 }
