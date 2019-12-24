@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestHost.Infra", "BestHost.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestHost.BusinessRules", "BestHost.BusinessRules\BestHost.BusinessRules.csproj", "{50B37A03-25B3-4EAE-9D33-48A68F087F3C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{13C86C6C-3ADF-45F1-B31E-B4E407C79DF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{6E872A25-D8AF-4FB0-87F1-5390BDCD20BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74EE242C-E9F7-45B4-8229-77493673B092} = {13C86C6C-3ADF-45F1-B31E-B4E407C79DF7}
+		{1D040987-89DA-42A6-AF46-7C42A3004F6E} = {13C86C6C-3ADF-45F1-B31E-B4E407C79DF7}
+		{B0B0CE01-4E73-40AB-BAFE-93D68BD07F03} = {13C86C6C-3ADF-45F1-B31E-B4E407C79DF7}
+		{50B37A03-25B3-4EAE-9D33-48A68F087F3C} = {13C86C6C-3ADF-45F1-B31E-B4E407C79DF7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {72BD601A-8EB5-40CD-AE9A-DEAD66B52D40}
